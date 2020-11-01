@@ -4,15 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
 
     <!-- -----------구글 폰트 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
-
+    <!-- 제이쿼리 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- 슬릭 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     
-
+    <link rel="stylesheet" href="./css/style.css">
 
     <title>Document</title>
 </head>
@@ -21,10 +24,10 @@
     <div class="topbar-wrap row">
         <div class="left-menu cell">
             <ul class="row">
-                <li class="cell"><a href="#">ABOUT B.</a></li>
-                <li class="cell"><a href="#">ARCHIVE</a></li>
-                <li class="cell"><a href="#">STORY</a></li>
-                <li class="cell"><a href="#">SHOP</a></li>
+                <li class="cell"><a href="https://magazine-b.co.kr/about-b/">ABOUT B.</a></li>
+                <li class="cell"><a href="https://magazine-b.co.kr/archive/?filter=magazine-b">ARCHIVE</a></li>
+                <li class="cell"><a href="https://magazine-b.co.kr/category/all/">STORY</a></li>
+                <li class="cell"><a href="https://magazine-b.co.kr/shop/">SHOP</a></li>
             </ul>
         </div>
         <div class="logo cell"></div>
@@ -33,9 +36,9 @@
                 <li class="cell search row"><a class="cell" href="#"><img src="./img/search.png" width="15px"
                             alt=""></a>
                     <input class="search-on cell" type="search" name="" id=""></li>
-                <li class="cell"><a href="#">LOGIN</a></li>
-                <li class="cell"><a href="#">JOIN</a></li>
-                <li class="cell"><a href="#">CART</a></li>
+                <li class="cell"><a href="https://magazine-b.co.kr/login/">LOGIN</a></li>
+                <li class="cell"><a href="https://magazine-b.co.kr/signup/">JOIN</a></li>
+                <li class="cell"><a href="https://magazine-b.co.kr/cart/">CART</a></li>
             </ul>
         </div>
     </div>
@@ -54,7 +57,7 @@
                 <div class="bfj-txt2 b-txt2 row">
                     <p class="cell">THE HOME</p>
                     <div class="border-left cell"></div>
-                    <a class="cell" href="#">SHOP</a>
+                    <a class="cell" href="https://magazine-b.co.kr/product/thehome/">SHOP</a>
                 </div>
 
             </div>
@@ -68,7 +71,7 @@
                 <div class="bfj-txt2 f-txt2 row">
                     <p class="cell">FOUND:</p>
                     <div class="border-left cell"></div>
-                    <a class="cell" href="#">SHOP</a>
+                    <a class="cell" href="https://magazine-b.co.kr/product/found/">SHOP</a>
                 </div>
             </div>
             <div class="bg-J">
@@ -82,31 +85,165 @@
                 <div class="bfj-txt2 j-txt2 row">
                     <p class="cell">NOVELIST</p>
                     <div class="border-left cell"></div>
-                    <a class="cell" href="#">SHOP</a>
+                    <a class="cell" href="https://magazine-b.co.kr/product/jobs-novelist/">SHOP</a>
                 </div>
             </div>
         </div>
         <div class="section-3">
-            <h1>
-                < SHOP>
-            </h1>
+            <h2>
+                SHOP
+            </h2>
             <div class="shop-slider">
-                <div class="book book1"></div>
-                <div class="book book2"></div>
-                <div class="book book3"></div>
-              </div>
-                      
+                <div class="book">
+                    <div class="book-in">
+                        <img src="https://magazine-b.co.kr/wp-content/uploads/2020/09/B_TheHome_%E1%84%91%E1%85%AD%E1%84%8C%E1%85%B5F1-600x850.jpg"
+                            alt="">
+                        <p class="kind">Magazine B</p>
+                        <p class="title">THE HOME</p>
+                        <p class="price">￦18,000</p>
+                    </div>
+                </div>
+                <div class="book">
+                    <div class="book-in">
+                        <img src="https://magazine-b.co.kr/wp-content/uploads/2020/09/1-scaled-e1599583176119.jpg"
+                            alt="">
+                            <p class="kind">Goods</p>
+                            <p class="title">SPECIAL SEASON T-SHIRT</p>
+                            <p class="price">￦22,000</p>
+                    </div>
+                </div>
+                <div class="book">
+                    <div class="book-in">
+                        <img src="https://magazine-b.co.kr/wp-content/uploads/2020/08/downloadable_found_cover-1.jpg"
+                            alt="">
+                            <p class="kind">Magazine F</p>
+                            <p class="title">Found:</p>
+                            <p class="price">￦16,200
+                            </p>
+                    </div>
+                </div>
+                <div class="book">
+                    <div class="book-in">
+                        <img src="https://magazine-b.co.kr/wp-content/uploads/2020/07/downloadable_jobs4_cover2-600x847.jpg"
+                            alt="">
+                            <p class="kind">Jobs</p>
+                            <p class="title">NOVELIST</p>
+                            <p class="price">￦17,100</p>
+                    </div>
+                </div>
+                <div class="book">
+                    <div class="book-in">
+                        <img src="https://magazine-b.co.kr/wp-content/uploads/2020/03/downloadable_clam_cover-600x847.jpg"
+                            alt="">
+                            <p class="kind">Magazine F</p>
+                            <p class="title">CLAM</p>
+                            <p class="price">￦13,500</p>
+                    </div>
+                </div>
+                <div class="book">
+                    <div class="book-in">
+                        <img src="https://magazine-b.co.kr/wp-content/uploads/2020/03/downloadable_rapha_cover.jpg"
+                            alt="">
+                            <p class="kind">Magazine B</p>
+                            <p class="title">RAPHA</p>
+                            <p class="price">￦13,500</p>
+                    </div>
+                </div>
+                <div class="book">
+                    <div class="book-in">
+                        <img src="https://magazine-b.co.kr/wp-content/uploads/2020/03/Jobs_Architectweb-1-1-768x1088.jpg"
+                            alt="">
+                            <p class="kind">Jobs</p>
+                            <p class="title">ARCHITECT</p>
+                            <p class="price">￦17,100</p>
+                    </div>
+                </div>
+                <div class="book">
+                    <div class="book-in">
+                        <img src="https://magazine-b.co.kr/wp-content/uploads/2020/02/downloadable_youtube_cover-1.jpg"
+                            alt="">
+                            <p class="kind">Magazine B</p>
+                            <p class="title">YOUTUBE</p>
+                            <p class="price">￦13,500</p>
+                    </div>
+                </div>
+                <div class="book">
+                    <div class="book-in">
+                        <img src="https://magazine-b.co.kr/wp-content/uploads/2020/01/downloadable_kimchi_cover.jpg"
+                            alt="">
+                            <p class="kind">Magazine F</p>
+                            <p class="title">KIMCHI</p>
+                            <p class="price">￦13,500</p>
+                    </div>
+                </div>
+               
+             
+            </div>
+
+        </div>
+
+        <div class="section-4 row">
+            <div class="b-cast-left cell">
+                <h1>B CAST</h1>
+                <p>B 캐스트는 매거진 〈B〉의 공식 팟캐스트입니다. <br>
+                    매거진 〈B〉의 형식과 동일하게 한 회,<br>
+                    하나의 브랜드를 테마로 정해 브랜드 토크와 낭독,<br>
+                    특별 게스트와의 대담 등 흥미로운 시각으로<br>
+                    브랜드를 바라볼 수 있는 프로그램으로 꾸며집니다.</p>
+                    <span class="ios">iOS - ITUNES</span>
+                    <span class="android">ANDROID - PODBBAG</span>
+            </div>
+            <div class="b-cast-right cell">
+                <div class="b-cast-slider">
+                    <div class="b-cast">
+                        <img src="https://magazine-b.co.kr/wp-content/uploads/2020/10/Chapter98_Rimowa-1024x1024.jpg" alt="">
+                    </div>
+                    <div class="b-cast">
+                        <img src="https://magazine-b.co.kr/wp-content/uploads/2020/10/Chapter97_StarWars-1024x1024.jpg" alt="">
+                    </div>
+                    <div class="b-cast">
+                        <img src="https://magazine-b.co.kr/wp-content/uploads/2020/10/Chapter96_Porter-1024x1024.jpg" alt="">
+                    </div>
+                    <div class="b-cast">
+                        <img src="https://magazine-b.co.kr/wp-content/uploads/2020/10/Chapter95_TheHomePart2-1024x1024.jpg" alt="">
+                    </div>
+                    <div class="b-cast">
+                        <img src="https://magazine-b.co.kr/wp-content/uploads/2020/09/Chapter93_DJI-1024x1024.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-5">
+            <h3>@MAGAZINE.B</h3>
+            <div class="insta-wrap row">
+                <div class="insta-1 cell">
+                    <a href="https://www.instagram.com/magazine.b/"><img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.29350-15/120593536_356441148935176_2112946394551154188_n.jpg?_nc_cat=101&ccb=2&_nc_sid=8ae9d6&_nc_eui2=AeGrtLrjgAZ_BudRdt4y6J9ITg2mfAiuXMRODaZ8CK5cxGzeG0k3CQAYpsMoFGEDaXo_LVczB7ymtDsSgUgBdgNC&_nc_ohc=RDnaE258GncAX_VaiT1&_nc_ht=scontent-ssn1-1.cdninstagram.com&oh=7608ee9667d0dda69b0d4d070490e7d3&oe=5FC57BAB" alt=""></a>
+                    <a href="https://www.instagram.com/magazine.b/"><img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.29350-15/117146977_2710549832567755_704520677830212712_n.jpg?_nc_cat=102&ccb=2&_nc_sid=8ae9d6&_nc_eui2=AeHuXyFJsxSW8A3YOoaJtBhN6mEelqaO2XnqYR6Wpo7ZeVyg0Bq6pr1-Damt0pKBX8a4N_9PS90fuE9dolQ5vW4A&_nc_ohc=BeTz2f2HM-0AX-BZrzb&_nc_ht=scontent-ssn1-1.cdninstagram.com&oh=b011ea71f52ee6f6827d0bc36fecd919&oe=5FC36E17" alt=""></a>
+                </div>
+                <div class="insta-2 cell">
+                    <a href="https://www.instagram.com/magazine.b/"><img src="
+                        https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/90319443_249045759600712_4081520134914716238_n.jpg?_nc_cat=109&ccb=2&_nc_sid=8ae9d6&_nc_eui2=AeH0Xy_q8nBYBFkBP2qMjcrLc-fnQNgTez5z5-dA2BN7PotsfVzUVY4rN6fGVahlJAvV2Fg9E7553y6Z0vPyo_6-&_nc_ohc=ydM2ENcUOcMAX8nQus1&_nc_ht=scontent-ssn1-1.cdninstagram.com&oh=ed004169b9374cb18761962408e41773&oe=5FC5CAD1" alt=""></a>
+                    <a href="https://www.instagram.com/magazine.b/"><img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/104685615_733502980800151_5669410334310447690_n.jpg?_nc_cat=107&ccb=2&_nc_sid=8ae9d6&_nc_eui2=AeFpdwYywNxVnNjRwFHaAgH8ExuayPMqQ5ATG5rI8ypDkNh5gWzOcQbA_3Mr5yMgoRzQpqViZbFfQMpEyliFY6qR&_nc_ohc=Vi2iaz_pz4EAX_qDtL_&_nc_ht=scontent-ssn1-1.cdninstagram.com&oh=c23a4a431edcbc8d8aac5039c1056041&oe=5FC544D0" alt=""></a>
+                </div>
+                <div class="insta-3 cell">
+                    <a href="https://www.instagram.com/magazine.b/"><img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.29350-15/118634910_876461912761760_5657688214795146887_n.jpg?_nc_cat=108&ccb=2&_nc_sid=8ae9d6&_nc_eui2=AeF1wsKTsRqQe7Bwb05GOxqN3FfyNuovU2fcV_I26i9TZyNZdz5d8fPQbUaZEykS_-CeaYYQkY-ISNXskhJErxR0&_nc_ohc=adSA8wGBxXIAX9j8gxp&_nc_ht=scontent-ssn1-1.cdninstagram.com&oh=31a3a99b82c9ac12c2c610356d9b5dcc&oe=5FC33984" alt=""></a>
+                    <a href="https://www.instagram.com/magazine.b/"><img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/30590565_242779412935073_8502406452747436032_n.jpg?_nc_cat=107&ccb=2&_nc_sid=8ae9d6&_nc_eui2=AeHQbxkR3pxoyUtz498rUs2m5JKLG7VM8yzkkosbtUzzLK7t3RaibVUavrDm0KsRM63B-MSbxUq62Y8NCMOLK-ms&_nc_ohc=N5XcKT7RcYUAX-if7s1&_nc_ht=scontent-ssn1-1.cdninstagram.com&oh=fcf8170b4bf33e3f9765276ccbc99102&oe=5FC5E513" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+
         </div>
 
 
 
-
     </div>
-    
 
 
 
-    <div class="box1000"></div>
+
+
     <script src="./js/script.js"></script>
 </body>
 
