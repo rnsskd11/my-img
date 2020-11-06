@@ -326,6 +326,7 @@ a {
     height: 40vw;
     margin: 200px auto;
     overflow: hidden;
+    position: relative;
 } 
 .b-cast-left{
     width: 40%;
@@ -400,6 +401,13 @@ a {
     top: 96.5%;
     left: 100%;
 }
+.b-more{
+    position: absolute;
+    bottom: 0;
+    right: 25px;
+    font-size: 20px;
+    color: #999;
+}
 
 /* 섹션 5 */
 
@@ -448,6 +456,7 @@ a {
     font-weight: 300;
     padding: 80px 100px;
     box-sizing: border-box;
+    font-size: 15px;
 }
 .footer>ul{
     margin-right:50px;
@@ -457,11 +466,11 @@ a {
     line-height: 23px;
 }
 
-.footer-left>h3{
+.footer-right>h3{
     text-align: right;
     letter-spacing: 1px;
 }
-.footer-left>.sign-box{
+.footer-right>.sign-box{
     width: 150px;
     height: 35px;
     line-height: 35px;
@@ -473,7 +482,7 @@ a {
     margin-bottom: 7px;
 }
 
-.footer-left>ul>li{
+.footer-right>ul>li{
     font-size: 25px;
     margin-left: 15px;
 }
