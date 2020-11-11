@@ -1,4 +1,4 @@
-body {
+html {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -35,7 +35,8 @@ a {
 
 /* -------------스타일 */
 .topbar-wrap {
-    width: 100vw;
+    width: 100%;
+    min-width: 1320px;
     line-height: 50px;
     padding: 15px 50px;
     padding-right: 70px;
@@ -50,7 +51,7 @@ a {
 }
 
 .topbar-wrap>.left-menu>ul li {
-    margin-right: 50px;
+    margin-right: 40px;
     box-sizing: border-box;
 
 }
@@ -130,7 +131,7 @@ a {
     top: 0;
     left: 0;
     width: 90%;
-    height: 600px;
+    height: 100%;
     background: url(https://magazine-b.co.kr/wp-content/uploads/2020/09/Web_Main_TheHome.jpg)no-repeat;
     background-size: cover;
     background-position: center;
@@ -142,7 +143,7 @@ a {
 .bg-F {
     position: absolute;
     width: 95%;
-    height: 600px;
+    height: 100%;
     background: url(https://magazine-b.co.kr/wp-content/uploads/2020/08/Found_Web_MainImage.jpg)no-repeat;
     background-size: cover;
     background-position: center;
@@ -154,7 +155,7 @@ a {
 .bg-J {
     position: absolute;
     width: 100%;
-    height: 600px;
+    height: 100%;
     background: url(../img/bg-J.jpg)no-repeat;
     background-size: cover;
     background-position: center;
@@ -183,7 +184,7 @@ a {
 }
 
 .bfj-txt2>p {
-    font-size: 17px;
+    font-size: 1rem;
     color: #fff;
     font-weight: bold;
 }
@@ -199,21 +200,21 @@ a {
 
 .bfj-txt2>a {
     color: #fff;
-    margin-top: 115px;
+    margin-top: 117px;
 }
 
 .b-txt2 {
-    font-size: 17px;
+    font-size: 1rem;
     position: absolute;
     top: 56%;
     left: 58%;
 }
 
 .f-txt2 {
-    font-size: 17px;
+    font-size: 1rem;
     position: absolute;
     top: 56%;
-    left: 72%;
+    left: 75%;
 }
 
 .f-txt2>a {
@@ -233,7 +234,7 @@ a {
 }
 
 .j-txt2 {
-    font-size: 17px;
+    font-size: 1vw;
     position: absolute;
     top: 56%;
     left: 72%;
@@ -322,52 +323,47 @@ a {
 /* -------섹션 4-------- */
 
 .section-4{
-    width: 100%;
-    height: 40vw;
-    margin: 200px auto;
-    overflow: hidden;
+    margin: 200px 0;
+    display: flex;
+    justify-content: center;
     position: relative;
 } 
 .b-cast-left{
-    width: 40%;
-    height: 100%;
+    width: 40%; 
     background: #000;
     color: #fff;
     text-align: center;
-    padding: 8% 0;
-    box-sizing: border-box;;
-    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.b-cast-left>h1{
-    font-size: 2.6vw;
+.b-cast-left-txt>h1{
+    font-size: 2.6rem;
 }
-.b-cast-left>p{
+.b-cast-left-txt>p{
     font-weight: 400;
-    font-size: 1.3vw;
+    font-size: 1.3rem;
     margin: 8% 0;
     line-height: 170%;
 }
-.b-cast-left>span{
+.b-cast-left-txt>span{
     margin: 0 30px;
     font-weight: 300;
     border-bottom: 1px solid #fff;
     cursor: pointer;
-    font-size: 0.7vw;
+    font-size: 0.7rem;
 }
 .b-cast-right{
     width: 40%;
     height: 100%;
 }
-.b-cast-slider {
-    width: 100%;
-    height: 100%;
-}
+
 .b-cast{
     width: 100%;
     height: 100%;
 }
 .b-cast>img{
-    width: 101%;
+    width: 100%;
     cursor: pointer;
 }
 .b-cast-slider .slick-prev:before{
@@ -398,7 +394,7 @@ a {
     z-index: 1;
 }
 .b-cast-slider .slick-next{
-    top: 96.5%;
+    top: 96.3%;
     left: 100%;
 }
 .b-more{
@@ -415,6 +411,7 @@ a {
     width: 100%;
     background: #ddd;
     padding-top: 120px;
+    overflow: hidden;
 }
 .section-5>h3{
     text-align: center;
@@ -487,6 +484,9 @@ a {
     margin-left: 15px;
 }
 
+body{
+    min-width: 1320px;
+}
 
 /* ----반응형----- */
 
