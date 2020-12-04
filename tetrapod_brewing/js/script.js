@@ -21,6 +21,22 @@ $(document).ready(function () {
     }
     Scroll__init();
 
+    function Menu__init() {
+        $(window).scroll(function () {
+            $(this).scrollTop();
+        })
+        $('.gnb-item1').click(function () {
+            $('body,html').animate({ scrollTop:1000})
+        })
+        $('.gnb-item2').click(function () {
+            $('body,html').animate({ scrollTop:3200})
+        })
+        $('.gnb-item3').click(function () {
+            $('body,html').animate({ scrollTop:4500})
+        })
+    }
+    Menu__init();
+
     function Section01__init() {
         $(window).scroll(function () {
             $(this).scrollTop();
@@ -97,14 +113,14 @@ $(document).ready(function () {
     }
     Section03__init();
 
-    function Section04__inti(){
+    function Section04__inti() {
         $('.insta-slider').slick({
             infinite: true,
             slidesToShow: 3.65,
             slidesToScroll: 2,
             centerMode: true,
             arrows: false
-          });
+        });
     }
     Section04__inti();
 })
