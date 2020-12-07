@@ -26,13 +26,13 @@ $(document).ready(function () {
             $(this).scrollTop();
         })
         $('.gnb-item1').click(function () {
-            $('body,html').animate({ scrollTop:1000})
+            $('body,html').animate({ scrollTop:$('.section01').offset().top},500)
         })
         $('.gnb-item2').click(function () {
-            $('body,html').animate({ scrollTop:3200})
+            $('body,html').animate({ scrollTop:$('.section02').offset().top},500)
         })
         $('.gnb-item3').click(function () {
-            $('body,html').animate({ scrollTop:4500})
+            $('body,html').animate({ scrollTop:$('.section03').offset().top},500)
         })
     }
     Menu__init();
