@@ -108,7 +108,7 @@ a {
 }
 
 .flow-txt {
-    width: 3500px;
+    width: 3580px;
     height: 45px;
     line-height: 45px;
     border-top: 1px solid #000;
@@ -121,9 +121,9 @@ a {
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 1px;
-    margin: 0 100px;
+    margin: 0 120px;
     animation-name: ani;
-    animation-duration: 8s;
+    animation-duration: 17s;
     animation-iteration-count: infinite;
     animation-direction: normal;
     animation-timing-function: linear;
@@ -135,7 +135,7 @@ a {
     }
 
     100% {
-        transform: translateX(-1730px);
+        transform: translateX(-1770px);
     }
 }
 
@@ -153,7 +153,7 @@ a {
 }
 
 .section>.section-txt>p:first-child {
-    font-size: 4rem;
+    font-size: 5.6rem;
     font-weight: bold;
     border-bottom: 7px solid #000;
     font-family: 'Roboto', sans-serif;
@@ -163,7 +163,8 @@ a {
 .section>.section-txt>p:nth-of-type(2) {
     margin-top: 30px;
     margin-bottom: 100px;
-    font-size: 13px;
+    font-size: 14px;
+    line-height: 25px;
 
 }
 
@@ -297,9 +298,7 @@ a {
 .product01-left {
     width: 50%;
     height: 60vh;
-    border-top: 1px solid #000;
-    border-right: 1px solid #000;
-    border-bottom: 1px solid #000;
+    border: 1px solid #000;
     position: relative;
     box-sizing: border-box;
 }
@@ -611,9 +610,6 @@ a {
     background-size: cover;
     border-bottom: 1px solid #000;
 }
-.ob-top-bg2{
-    border-top: 1px solid #000;
-}
 
 .ob-top-bg>h1 {
     font-size: 5vw;
@@ -832,6 +828,7 @@ a {
     position: relative;
     background: url("https://object.plus-ex.com/data/skin/front/moment_C/img/main/img_objcover3.jpg")no-repeat center;
     background-size: cover;
+    border-top: 1px solid #000;
     border-bottom: 1px solid #000;
 }
 
