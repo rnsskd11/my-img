@@ -70,6 +70,10 @@ $(document).ready(function () {
   Winter__init();
 
   function Aboutbrand__init() {
+    $('.about-lookm').click(function(){
+      $('.about-4brand').css('display','block')
+      $('.about-lookm-img').addClass('active')
+    })
     $('.about-curetty, .list-item-h-curetty').click(function(){
       $('.about-4brand').css('display','block')
       $('.about-4brand-curetty').addClass('active')
@@ -88,7 +92,7 @@ $(document).ready(function () {
     })
     $('.about-4brand>.close-btn').click(function(){
       $('.about-4brand').css('display','none')
-      $('.about-4brand-curetty, .about-4brand-ugly, .about-4brand-crank, .about-4brand-odd').removeClass('active')
+      $('.about-4brand-curetty, .about-4brand-ugly, .about-4brand-crank, .about-4brand-odd, .about-lookm-img').removeClass('active')
     })
 
   }

@@ -376,7 +376,8 @@ header{
 .about-4brand>.about-4brand-curetty.active,
 .about-4brand>.about-4brand-ugly.active,
 .about-4brand>.about-4brand-odd.active,
-.about-4brand>.about-4brand-crank.active{
+.about-4brand>.about-4brand-crank.active,
+.about-4brand>.about-lookm-img.active{
    display: block;
 }
 
