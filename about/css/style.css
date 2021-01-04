@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul,ol,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:inherit
+}
+
+.min-width{
+    min-width: 1440px;
+}
+/* -----------------스타일 */
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.top-bar{
+    position: relative;
+    height: 70px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 70px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.left-menu{
+    display: flex;
+}
+
+.left-menu>li{
+    font-size: 1.2rem;
+    font-weight: 400    ;
+    margin-right: 17px;
+}
+.left-menu>li>a{
+    display: block;
+    color: #000;
+    transition: 0.4s;
+}
+.left-menu>li>a:after{
+    display: block;
+    content: "";
+    clear: both;
+    width: 0;
+    height: 3px;
+    background-color: #ff3300;
+    transition: 0.5s;
+}
+.left-menu>li:hover a:after{
+    width: 100%;
+}
+.left-menu>li:hover >a{
+    color: #ff3300;
+}
+.logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.right-menu{
+    display: flex;
+}
+.right-menu>span{
+    font-size: 2rem;
+    color: #ff3300;
+}
+.right-menu-icon{
+    position: relative;
+    width: 25px;
+    height: 23px;
+    margin: 0 7px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.right-menu-icon>div{
+    width: 25px;
+    height: 4px;
+    background: #000;
+    transition: 0.3s;
+}
+.right-menu-icon>.line01{
+    position: absolute;
+    top: 0;
+}
+.right-menu-icon>.line02{
+    position: absolute;
+    width: 25px;
+    height: 4px;
+    top: 50%;
+    left: -330px;
+    transform: translateY(-50%);
+    transition: 0.5s;
+}
+.right-menu-icon>.line03{
+    position: absolute;
+    bottom: 0;
+}
+.right-menu-icon:hover >.line02{
+    width: 25px;
+    left: 0;
+}
+.right-menu-icon>.line01.active{
+    transform: rotate(45deg)translateY(-50%);
+    top: 50%;
+}
+.right-menu-icon>.line02.active{
+    display: none;
+}
+.right-menu-icon>.line03.active{
+    transform: rotate(-45deg)translateY(50%);
+    bottom: 50%;
+}
+
+.right-menu-click{
+    position: absolute;
+    top: 0;
+    right: -700px;
+    width: 600px;
+    height: 100vh;
+    background: #ff3300;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    box-sizing: border-box;
+    font-size: 3.6rem;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.right-menu-click>ul>li{
+    margin: 5px 0;
+    transition: 0.3s;
+}
+.right-menu-click>ul>li:hover{
+    color: #fff;
+    margin-left: 30px;
+}
+.right-menu-click.active{
+    right: 0;
+}
+
+
+/* -------- =섹션 */
+
+.main-img{
+    position: relative;
+    width: 100%;
+}
+.main-img>img{
+    width: 100%;
+}
+.main-img>.line01{
+    position: absolute;
+    top: 41.35%;
+    width: 0;
+    height: 1px;
+    background: #000;
+    transition: 2s;
+}
+.main-img>.line-orange{
+    position: absolute;
+    left: 25.5%;
+    height: 15px;
+    background: #000;
+    transition: 2s;
+}
+.main-img>.line02{
+    top: 76.85%;
+    width: 0;
+}
+.main-img>.line03{
+    top: 79.35%;
+    width: 0;
+}
+
+.main-img>.line04{
+    top: 81.85%;
+    width: 0;
+}
+.main-img>.line05{
+    top: 84.3%;
+    width: 0;
+}
+
+
+
+
+
+@media screen and (max-width:1000px){
+    .left-menu{
+        display:none;
+    }
+}
