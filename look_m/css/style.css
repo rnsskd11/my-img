@@ -177,8 +177,8 @@ header{
     margin-right:0px;
     font-size: 14px;
 }
-.section01{
-    padding-top: 30px;
+.wrap{
+    padding-top: 70px;
 }
 
 .main-bg>img{
@@ -251,7 +251,7 @@ header{
     text-align: center;
     color: #fff;
     font-family: 'Roboto Slab', serif;
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight: bold;
     letter-spacing: 7px;
 }
