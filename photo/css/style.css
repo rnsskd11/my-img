@@ -70,3 +70,10 @@ a{
     text-align: right;
     z-index: 100;
 }
+
+@media screen and (max-width:500px){
+    .slick-slide img{
+        width: 100%;
+        object-fit: contain;
+    }
+}
