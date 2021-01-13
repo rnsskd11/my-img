@@ -50,6 +50,7 @@ a{
     font-size: 0.8rem;
     font-weight: bold;
     line-height: 20px;
+    z-index: 100;
 }
 .txt02{
     position: fixed;
@@ -58,6 +59,7 @@ a{
     font-size: 0.8rem;
     font-weight: bold;
     line-height: 20px;
+    z-index: 100;
 }
 .txt03{
     position: fixed;
@@ -66,4 +68,5 @@ a{
     font-size: 0.7rem;
     line-height: 20px;
     text-align: right;
+    z-index: 100;
 }
