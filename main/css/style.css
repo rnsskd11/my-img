@@ -1,27 +1,33 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-ul,ol,li {
+
+ul,
+ol,
+li {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
-    color:inherit
+    color: inherit
 }
 
-.min-width{
+.min-width {
     min-width: 1440px;
 }
+
 /* -----------------스타일 */
-header{
+header {
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 100;
 }
-.top-bar{
+
+.top-bar {
     position: relative;
     height: 70px;
     display: flex;
@@ -29,23 +35,26 @@ header{
     align-items: center;
     padding: 10px 70px;
     box-sizing: border-box;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #000;
 }
-.left-menu{
+
+.left-menu {
     display: flex;
 }
 
-.left-menu>li{
+.left-menu>li {
     font-size: 1.2rem;
-    font-weight: 400    ;
+    font-weight: 400;
     margin-right: 17px;
 }
-.left-menu>li>a{
+
+.left-menu>li>a {
     display: block;
     color: #000;
     transition: 0.4s;
 }
-.left-menu>li>a:after{
+
+.left-menu>li>a:after {
     display: block;
     content: "";
     clear: both;
@@ -54,26 +63,32 @@ header{
     background-color: #ff3300;
     transition: 0.5s;
 }
-.left-menu>li:hover a:after{
+
+.left-menu>li:hover a:after {
     width: 100%;
 }
-.left-menu>li:hover >a{
+
+.left-menu>li:hover>a {
     color: #ff3300;
 }
-.logo{
+
+.logo {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
-.right-menu{
+
+.right-menu {
     display: flex;
 }
-.right-menu>span{
+
+.right-menu>span {
     font-size: 2rem;
     color: #ff3300;
 }
-.right-menu-icon{
+
+.right-menu-icon {
     position: relative;
     width: 25px;
     height: 23px;
@@ -81,17 +96,20 @@ header{
     margin-top: 15px;
     cursor: pointer;
 }
-.right-menu-icon>div{
+
+.right-menu-icon>div {
     width: 25px;
     height: 4px;
     background: #000;
     transition: 0.3s;
 }
-.right-menu-icon>.line01{
+
+.right-menu-icon>.line01 {
     position: absolute;
     top: 0;
 }
-.right-menu-icon>.line02{
+
+.right-menu-icon>.line02 {
     position: absolute;
     width: 25px;
     height: 4px;
@@ -100,27 +118,32 @@ header{
     transform: translateY(-50%);
     transition: 0.5s;
 }
-.right-menu-icon>.line03{
+
+.right-menu-icon>.line03 {
     position: absolute;
     bottom: 0;
 }
-.right-menu-icon:hover >.line02{
+
+.right-menu-icon:hover>.line02 {
     width: 25px;
     left: 0;
 }
-.right-menu-icon>.line01.active{
+
+.right-menu-icon>.line01.active {
     transform: rotate(45deg)translateY(-50%);
     top: 50%;
 }
-.right-menu-icon>.line02.active{
+
+.right-menu-icon>.line02.active {
     display: none;
 }
-.right-menu-icon>.line03.active{
+
+.right-menu-icon>.line03.active {
     transform: rotate(-45deg)translateY(50%);
     bottom: 50%;
 }
 
-.right-menu-click{
+.right-menu-click {
     position: absolute;
     top: 0;
     right: -700px;
@@ -135,22 +158,25 @@ header{
     font-weight: bold;
     transition: 0.5s;
 }
-.right-menu-click>ul>li{
+
+.right-menu-click>ul>li {
     margin: 5px 0;
     transition: 0.3s;
 }
-.right-menu-click>ul>li:hover{
+
+.right-menu-click>ul>li:hover {
     color: #fff;
     margin-left: 30px;
 }
-.right-menu-click.active{
+
+.right-menu-click.active {
     right: 0;
 }
 
 
 /* 섹션-------------------- */
 
-.main-bg{
+.main-bg {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -158,22 +184,51 @@ header{
     background-size: cover;
 }
 
-.main-bg>video{
+.video {
     position: absolute;
-    top: 30%;
-    right: 8%;
-    width: 40%;
+    top: 50%;
+    right: 7%;
+    transform: translateY(-50%);
+    width: 650px;
+    height: 480px;
+    background-color: #000;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-bg video {
+    width: 102%;
+}
+
+.circle {
+    position: absolute;
+    top:60%;
+    left:39%;
+}
+
+.circle img {
+    transform-origin: 50%;
+    animation-name: ani1;
+    animation-timing-function: linear;
+    animation-duration: 17s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+@keyframes ani1 {
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 
 
 
-
-
-
-@media screen and (max-width:1000px){
-    .left-menu{
-        display:none;
+@media screen and (max-width:1000px) {
+    .left-menu {
+        display: none;
     }
 
 }
