@@ -225,7 +225,7 @@ a {
 .story-img {
     width: 120%;
     height: 600px;
-    background: url(../img/bg_2.jpg)no-repeat;
+    background: url(https://cdn.jsdelivr.net/gh/rnsskd11/my-img/tetrapod/img/bg_2.jpg)no-repeat;
     background-position: -80px;
     background-size: cover;
 }
@@ -283,7 +283,7 @@ a {
 .busan-img {
     width: 85%;
     height: 500px;
-    background: url(../img/busan_store.jpg)no-repeat center;
+    background: url(https://cdn.jsdelivr.net/gh/rnsskd11/my-img/tetrapod/img/busan_store.jpg)no-repeat center;
     background-size: cover;
 }
 
@@ -297,7 +297,7 @@ a {
 .seoul-img {
     width: 85%;
     height: 500px;
-    background: url(../img/seoul_store.jpg)no-repeat center;
+    background: url(https://cdn.jsdelivr.net/gh/rnsskd11/my-img/tetrapod/img/seoul_store.jpg)no-repeat center;
     background-size: cover;
 }
 
@@ -574,6 +574,9 @@ a {
     right: 0;
     display: flex;
     justify-content: flex-end;
+}
+.T-img>img{
+    object-fit: contain;
 }
 .contact-txt-box{
     position: absolute;

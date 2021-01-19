@@ -153,7 +153,7 @@ header{
 .bg-1{
     width: 100%;
     padding-bottom: 150%;
-    background: url(../img/bg-1.jpg)no-repeat center;
+    background: url(https://cdn.jsdelivr.net/gh/rnsskd11/my-img/ex/img/bg-1.jpg)no-repeat center;
     background-size: cover;
     margin-bottom: 100px;
 }
@@ -173,7 +173,7 @@ header{
 .list01-img{
     width: 100%;
     padding-bottom: 60%;
-    background: url(../img/rsp-1.jpg)no-repeat center;
+    background: url(https://cdn.jsdelivr.net/gh/rnsskd11/my-img/ex/img/rsp-1.jpg)no-repeat center;
     background-size: cover;
     box-shadow: 3px 3px 10px #ddd;
 }
@@ -193,7 +193,7 @@ header{
 .list02-img{
     width: 100%;
     padding-bottom: 100%;
-    background: url(../img/rsp-2.jpg)no-repeat center;
+    background: url(https://cdn.jsdelivr.net/gh/rnsskd11/my-img/ex/img/rsp-2.jpg)no-repeat center;
     background-size: cover;
     box-shadow: 3px 3px 10px #ddd;
 }
@@ -213,7 +213,7 @@ header{
 .list03-img{
     width: 100%;
     padding-bottom: 60%;
-    background: url(../img/rsp-3.jpg)no-repeat center;
+    background: url(https://cdn.jsdelivr.net/gh/rnsskd11/my-img/ex/img/rsp-3.jpg)no-repeat center;
     background-size: cover;
     box-shadow: 3px 3px 10px #ddd;
 }
