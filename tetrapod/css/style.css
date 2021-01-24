@@ -637,6 +637,7 @@ a {
 }
 .footer .right-txt{
     text-align: right;
+    font-size: 0.5rem;
 }
 .right-icon{
     margin-top: 20px;
