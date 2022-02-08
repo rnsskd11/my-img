@@ -28,7 +28,7 @@ a {
     font-weight: 100;
     overflow: hidden;
     min-width: 1200px;
-    min-height: 700px;
+    min-height: 500px;
 }
 
 /* ---------------main_left----------- */
@@ -40,6 +40,7 @@ a {
     color: #fff;
 
 }
+
 
 .main_left>.left_txt01 {
     font-size: 14px;
@@ -81,7 +82,7 @@ a {
 }
 
 .pj_list.active {
-    height: 350px;
+    height: 300px;
     transition: 0.5s;
 }
 
@@ -98,11 +99,26 @@ a {
 
 .left_txt02 {
     position: absolute;
-    left: 20px;
+    left: 15px;
     bottom: 20px;
+    font-size: 11px;
+    font-family: 'Montserrat', sans-serif;
+}
+.left_txt03 {
+    position: absolute;
+    right:20px;
+    bottom: 60px;
     font-size: 12px;
+    text-align:right;
     line-height: 20px;
     font-family: 'Montserrat', sans-serif;
+    display: none;
+}
+.left_txt03>a{
+    color: blue;
+    font-weight: 300;
+    font-style: italic;
+    
 }
 
 /* -----------main_right------------- */
@@ -189,6 +205,32 @@ a {
 
 
 /* ------------모바일-------------- */
+.flower {
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    z-index: 999;
+    cursor: pointer;
+    display: none;
+}
+
+.flower img {
+    transform-origin: 50%;
+    animation-name: flower;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.flower:hover>img {
+    animation-play-state: paused;
+}
+
+@keyframes flower {
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 @media screen and (max-width:800px) {
     .wrap {
@@ -199,7 +241,14 @@ a {
     .main_left {
         display: none;
     }
-
+    .main_left.active{
+        display: block;
+        width: 100%;
+    }
+    .main_center.active{
+        display: none;
+    }
+    
     .main_right {
         display: none;
     }
@@ -209,6 +258,19 @@ a {
     }
     .main_center>.img02{
         display: none;
+    }
+    .flower{
+        display: block;
+    }
+    .left_txt03{
+        display: block;
+    }
+
+}
+@media screen and (max-width:500px) {
+    .main_center>.logo{
+        width: 290px;
+        height: 80px;
     }
 
 

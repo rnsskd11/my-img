@@ -1,22 +1,22 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
     function PjList__init() {
 
-        $('.pj_hover>a').click(function(){
+        $('.pj_hover>a').click(function () {
             $('.pj_list').toggleClass('active')
         })
     }
     PjList__init();
 
-    // function Menu__init() {
-    //     $('.menu-i').click(function () {
-    //       $('.menu-i,#menu-on').toggleClass('active')
-    //     })
-    //   }
-    //   Menu__init();
+    function Flower__init() {
+        $('.flower').click(function(){
+            $('.main_left').toggleClass('active')
+            $('.main_center').toggleClass('active')
+
+        })
+    }
+    Flower__init();
 
 
 
 })
-
-
