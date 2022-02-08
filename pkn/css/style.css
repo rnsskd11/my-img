@@ -64,21 +64,32 @@ a {
 }
 
 .nav_li>a:hover {
-    color: blue;
+    color: rgb(2, 91, 255);
 }
 
 .pj_list {
+    position: relative;
     width: 95%;
     height: 0;
-    border-top: 1px dashed #fff;
+    border-top: 2px solid #fff;
     margin-top: 20px;
     font-weight: 400;
     font-size: 33px;
     line-height: 50px;
-    overflow: scroll;
+    overflow-y: scroll;
+    background-color: #000;
     transition: 0.5s;
     box-sizing: border-box;
+    z-index: 10;
 
+}
+::-webkit-scrollbar{
+    width: 7px;
+    background-color: #000;
+    border: 1px dashed #fff;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #fff;
 }
 
 .pj_list.active {
@@ -103,19 +114,22 @@ a {
     bottom: 20px;
     font-size: 11px;
     font-family: 'Montserrat', sans-serif;
+    white-space: nowrap;
 }
 .left_txt03 {
     position: absolute;
-    right:20px;
-    bottom: 60px;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
     font-size: 12px;
-    text-align:right;
+    text-align:center;
     line-height: 20px;
     font-family: 'Montserrat', sans-serif;
     display: none;
+    z-index: 1;
 }
 .left_txt03>a{
-    color: blue;
+    color: rgb(2, 91, 255);
     font-weight: 300;
     font-style: italic;
     
@@ -264,6 +278,10 @@ a {
     }
     .left_txt03{
         display: block;
+    }
+    .left_txt02{
+        left: 50%;
+        transform: translateX(-50%);
     }
 
 }
