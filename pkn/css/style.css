@@ -154,6 +154,10 @@ a {
     font-family: 'Montserrat', sans-serif;
 }
 
+.main_right>p >a{
+    font-style: italic;
+    font-weight: 300;
+}
 
 
 /* --------------center---------- */
@@ -236,9 +240,9 @@ a {
     animation-iteration-count: infinite;
 }
 
-.flower:hover>img {
+/* .flower:hover>img {
     animation-play-state: paused;
-}
+} */
 
 @keyframes flower {
     100% {
