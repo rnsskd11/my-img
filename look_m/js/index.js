@@ -27,10 +27,8 @@ $(document).ready(function () {
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 2500,
+      autoplaySpeed: 2000,
       arrows: false,
-      fade: true,
-      cssEase: 'linear'
     });
 
   }

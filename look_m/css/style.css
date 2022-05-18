@@ -1,3 +1,7 @@
+
+body,html{
+    font-size: 16px;
+}
 *{
     margin: 0;
     padding: 0;
@@ -20,6 +24,9 @@ a{
 }
 .cell2{
     float: right;
+}
+.min-width{
+    min-width: 1440px;
 }
 /* 스타일----------- */
 header{
@@ -178,7 +185,7 @@ header{
     font-size: 14px;
 }
 .wrap{
-    padding-top: 70px;
+    padding-top: 30px;
 }
 
 .main-bg>img{
@@ -207,14 +214,15 @@ header{
 }
 
 #brand-list{
-    width: 100%;
-    height: 45vw;
-    margin: 150px 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
 }
 #brand-list>.list-item{
     position: relative;
-    width: 40%;
-    padding-bottom: 23%; 
+    width:25%;
+   height: 320px;
+   border: 1px solid #000;
     float: left;
     display: flex;
     justify-content: center;
@@ -225,7 +233,6 @@ header{
    background: url(../img/section02_bg1.jpg)no-repeat;
     background-position: center;
     background-size: cover;
-    margin-left: 10%;
 }
 #brand-list>.list-item2{
     background: url(../img/section02_bg2.jpg)no-repeat;
@@ -236,7 +243,6 @@ header{
     background: url(../img/section02_bg3.jpg)no-repeat;
     background-position: center;
     background-size: cover;
-    margin-left: 10%;
 }
 #brand-list>.list-item4{
     background: url(../img/section02_bg4.jpg)no-repeat;
@@ -265,15 +271,13 @@ header{
     opacity: 0.9;
     text-align:center;
     display: none;
-    padding-top: 21%;
     cursor: pointer;
-}
-#brand-list>.list-item>.list-item-h>p{
-    font-weight: 700;
-    margin-bottom: 5px;
+    
 }
 #brand-list>.list-item:hover >.list-item-h{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .con03{
@@ -319,6 +323,86 @@ header{
     padding-bottom: 3px;
     cursor: pointer;
 }
+/* --섹션02-1----------------- */
+
+.section02-1{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.section02-1>.left-img{
+    width: 575px;
+    padding-bottom: 600px;
+    background: url(../img/a01.jpg)no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+.section02-1>.right{
+    width: 575px;
+    margin-left: 20px;
+}
+.section02-1>.right>.right-top{
+    width: 100%;
+    height: 50%;
+}
+.section02-1>.right>.right-bottom{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+.section02-1>.right>.right-top>h1{
+    font-size: 3.3rem;
+    font-family: 'Archivo Black', sans-serif;
+    line-height: 55px;
+}
+.section02-1>.right>.right-top>p{
+    font-size: 1rem;
+    margin-top: 3%;
+}
+.right-bottom-01{
+    width: 100%;
+    height: 100%;
+    background: url(../img/a05.jpg)no-repeat bottom;
+    background-size: cover;
+}
+
+
+/* --섹션02-2----------------- */
+.section02-2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.section02-2>.left-img{
+    width: 575px;
+    height: 420px;
+    background: url(../img/b02.jpg)no-repeat top;
+    background-size: cover;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.section02-2>.right-img{
+    width: 575px;
+    height: 420px;
+    background: url(../img/b03.jpg)no-repeat center;
+    background-size: cover;
+    cursor: pointer;
+}
+.section02-2>div>div{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 420px;
+    display: none;
+}
+.section02-2>div:hover >div{
+    display: block;
+}
+
 .footer-wrap{
     width: 100%;
     background: #ddd;
